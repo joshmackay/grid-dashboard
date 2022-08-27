@@ -1,0 +1,241 @@
+html,body, *{
+    padding:0;
+    margin: 0;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    /* width: 100vw; */
+    height: 100vh;
+ 
+}
+
+.main-container{
+    display: grid;
+    grid-template: auto auto / auto auto;
+
+}
+
+.main-container>div{
+    padding: 30px;
+}
+
+.header{
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.13);
+    background-color: white;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 30px 80px !important;
+}
+
+.search-container, .user-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-flex, .profile-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.search{
+    height: 40px;
+    width: 600px;
+    border: none;
+    background-color: #E1E9F0;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    padding: 0 10px;
+    font-weight: 300;
+}
+
+.header-icon{
+    font-size: 30px;
+    align-self: center;
+}
+
+.profile-settings{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-settings .user-profile-image, .user-card>img{
+    height: 70px;
+    width: 70px;
+}
+
+.greeting-username{}
+
+.username{
+    font-size: 1.7rem;
+}
+
+.user-profile-image{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.post-options{
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-options>button{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #1992D4;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #1992D4;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    font-size: 2rem;
+    z-index: 2;
+}
+
+.logo{
+    width: auto;
+}
+
+.menu > ul{
+    list-style-type: none;
+    color: white;
+}
+
+.menu >ul>li{
+    margin: 15px 0px;
+}
+
+li>.fa-solid{
+    margin-right: 25px;
+    font-size: 1.5rem;
+}
+
+.main-area{
+    background-color: #E1E9F0;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.main-area{
+    display: grid;
+    gap: 40px;
+    grid-template: 1fr/3fr 1fr;
+}
+
+.projects-section{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.projects-cards-container{
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr 1fr;
+    gap: 30px;
+}
+
+.projects-heading{
+    grid-column: 1/3;
+}
+
+.card, .side-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-left: 10px solid rgb(255, 181, 43);
+    box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.134);
+}
+
+.card-name{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.card-description{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.card-icons{
+    display: flex;
+    gap: 30px;
+    font-size: 1.7rem;
+    justify-content: end;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.right-side-section{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.trending-section{
+    
+}
+
+.announce-title, .username-side-card, .greeting{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.announce-text, .pagename{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.user-card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.username-side-card{
+   
+}
+
+.user-card>img{
+    border-radius: 50%;
+}
+
+.card{
+    transition: all .1s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
